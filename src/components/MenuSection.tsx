@@ -15,7 +15,6 @@ export default function MenuSection() {
         <ScrollReveal>
           <h2 className="section-title text-center mb-3">{t.menu.title}</h2>
           <p className="section-subtitle text-center mx-auto mb-10">{t.menu.subtitle}</p>
-          <p className="section-subtitle text-center mx-auto mb-10">{t.menu.subtitle}</p>
         </ScrollReveal>
 
         {/* Tabs */}
