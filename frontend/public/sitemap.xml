@@ -1,37 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- Homepage - Swedish -->
   <url>
     <loc>https://saffran-peach.vercel.app/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://saffran-peach.vercel.app/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://saffran-peach.vercel.app/" />
     <lastmod>2026-02-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+  
+  <!-- Homepage - English -->
+  <url>
+    <loc>https://saffran-peach.vercel.app/?lang=en</loc>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://saffran-peach.vercel.app/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://saffran-peach.vercel.app/?lang=en" />
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- Menu - Swedish -->
   <url>
     <loc>https://saffran-peach.vercel.app/#menu</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://saffran-peach.vercel.app/?lang=en#menu" />
     <lastmod>2026-02-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
+  
+  <!-- Menu - English -->
+  <url>
+    <loc>https://saffran-peach.vercel.app/?lang=en#menu</loc>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://saffran-peach.vercel.app/#menu" />
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Booking - Swedish -->
   <url>
     <loc>https://saffran-peach.vercel.app/#booking</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://saffran-peach.vercel.app/?lang=en#booking" />
     <lastmod>2026-02-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  
+  <!-- Booking - English -->
+  <url>
+    <loc>https://saffran-peach.vercel.app/?lang=en#booking</loc>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://saffran-peach.vercel.app/#booking" />
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Catering - Swedish -->
   <url>
     <loc>https://saffran-peach.vercel.app/#catering</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://saffran-peach.vercel.app/?lang=en#catering" />
     <lastmod>2026-02-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  
+  <!-- Catering - English -->
+  <url>
+    <loc>https://saffran-peach.vercel.app/?lang=en#catering</loc>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://saffran-peach.vercel.app/#catering" />
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- About - Swedish -->
   <url>
     <loc>https://saffran-peach.vercel.app/#about</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://saffran-peach.vercel.app/?lang=en#about" />
     <lastmod>2026-02-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  
+  <!-- About - English -->
+  <url>
+    <loc>https://saffran-peach.vercel.app/?lang=en#about</loc>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://saffran-peach.vercel.app/#about" />
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Contact - Swedish -->
   <url>
     <loc>https://saffran-peach.vercel.app/#contact</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://saffran-peach.vercel.app/?lang=en#contact" />
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Contact - English -->
+  <url>
+    <loc>https://saffran-peach.vercel.app/?lang=en#contact</loc>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://saffran-peach.vercel.app/#contact" />
     <lastmod>2026-02-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
