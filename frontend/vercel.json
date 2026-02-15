@@ -11,9 +11,19 @@
   ],
   "routes": [
     {
+      "src": "/google6a518d32c39b617a.html",
+      "dest": "/google6a518d32c39b617a.html"
+    },
+
+    {
       "src": "/assets/(.*)",
       "dest": "/assets/$1"
     },
+
+    {
+      "handle": "filesystem"
+    },
+
     {
       "src": "/(.*)",
       "dest": "/index.html"
