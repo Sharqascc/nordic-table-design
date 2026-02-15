@@ -8,8 +8,10 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Load .env from parent directory (root folder)
-dotenv.config({ path: path.resolve(__dirname, '../.env') });
+// Load .env only in development (on Vercel, use dashboard environment variables)
+if (process.env.NODE_ENV !== 'production') {
+  dotenv.config({ path: path.resolve(__dirname, '../.env') });
+}
 
 const app: Express = express();
 const PORT = process.env.PORT || 5000;
