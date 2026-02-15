@@ -46,6 +46,9 @@ app.use(cors(corsOptions));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+// Handle CORS preflight requests
+app.options('*', cors(corsOptions));
+
 // Configure Nodemailer with Gmail
 const transporter = nodemailer.createTransport({
   service: 'gmail',
