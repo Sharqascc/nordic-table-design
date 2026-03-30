@@ -4,6 +4,7 @@ import nodemailer from 'nodemailer';
 import dotenv from 'dotenv';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { RagService } from './rag/ragService.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -15,6 +16,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 const app: Express = express();
 const PORT = process.env.PORT || 5000;
+const ragService = new RagService(path.resolve(__dirname));
 
 // Helper to normalize URL (remove trailing slash)
 const normalizeUrl = (url: string) => url.replace(/\/$/, '');
@@ -375,6 +377,53 @@ app.post('/api/verify-otp', async (req: Request, res: Response) => {
 // Health check endpoint
 app.get('/api/health', (req: Request, res: Response) => {
   res.json({ status: 'OK', timestamp: new Date() });
+});
+
+// RAG index status + rebuild
+app.post('/api/rag/reindex', async (req: Request, res: Response) => {
+  try {
+    const result = await ragService.reindex();
+    res.json({
+      success: true,
+      message: 'RAG index rebuilt successfully.',
+      ...result,
+    });
+  } catch (error) {
+    console.error('RAG reindex error:', error);
+    res.status(500).json({
+      success: false,
+      message: 'Failed to rebuild RAG index.',
+      error: process.env.NODE_ENV === 'development' ? String(error) : undefined,
+    });
+  }
+});
+
+// Chatbot endpoint (answers from vector store context)
+app.post('/api/chatbot', async (req: Request, res: Response) => {
+  try {
+    const { message } = req.body as { message?: string };
+
+    if (!message || !message.trim()) {
+      return res.status(400).json({
+        success: false,
+        message: 'Message is required.',
+      });
+    }
+
+    const answer = await ragService.ask(message.trim());
+
+    res.json({
+      success: true,
+      ...answer,
+    });
+  } catch (error) {
+    console.error('Chatbot error:', error);
+    res.status(500).json({
+      success: false,
+      message: 'Failed to process chatbot request.',
+      error: process.env.NODE_ENV === 'development' ? String(error) : undefined,
+    });
+  }
 });
 
 // Start server

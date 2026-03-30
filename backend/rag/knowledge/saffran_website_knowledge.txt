@@ -1,0 +1,134 @@
+Saffran Restaurant - Website Knowledge Base
+
+Restaurant Identity
+- Name: Saffran
+- Tagline (EN): The Taste of the Middle East in the Heart of Stockholm
+- Tagline (SV): Smaken av Mellanöstern i hjärtat av Stockholm
+- Address: Kungsgatan 15, 111 43 Stockholm
+- Phone: +46 8 123 45 67
+- Email: info@saffranrestaurang.se
+- Instagram: https://instagram.com/saffransthlm
+- Facebook: https://facebook.com/saffransthlm
+- TikTok: https://tiktok.com/@saffransthlm
+
+Opening Hours
+- Monday-Thursday: 11:00-21:00
+- Friday: 11:00-22:00
+- Saturday: 12:00-22:00
+- Sunday: 12:00-20:00
+
+Trust and Service Focus
+- Lunch Buffet
+- Catering
+- Halal
+- Vegetarian options
+- Stockholm City location
+
+Booking Information
+- Table bookings are available via the booking form on the website.
+- Required fields: name, email, phone, date, time, number of guests.
+- Optional field: message (special requests).
+- Booking flow includes OTP email verification.
+- OTP is valid for 10 minutes.
+- Booking time validation range: 10:00 to 22:00.
+- Past dates are not accepted.
+
+Lunch Buffet
+- Price: 139 SEK per person
+- Time: Monday-Friday 11:00-14:00
+- Description: Daily lunch buffet with fresh dishes from the kitchen. Menu varies by day.
+- Includes: hot dish, salad bar, bread and dip, drink (water/coffee/tea), dessert.
+
+Catering Packages
+1) Small Package
+- Guests: 10-25
+- Price from: 199 SEK/person
+- Includes: 3 starters, 2 main courses, salad and bread, 1 dessert
+
+2) Medium Package
+- Guests: 25-50
+- Price from: 179 SEK/person
+- Includes: 4 starters, 3 main courses, salad and bread, 2 desserts, drinks included
+
+3) Large Package
+- Guests: 50+
+- Price from: 159 SEK/person
+- Includes: 5 starters, 4 main courses, salad bar, 3 desserts, drinks included, service staff
+
+About / Story
+- Saffran is inspired by a family culinary tradition from the Middle East.
+- Founder: Chef Ahmad Rashidi.
+- Concept: blend of oriental tradition and Scandinavian elegance.
+- Mission: share authentic flavors in Stockholm with quality ingredients and warm hospitality.
+
+Featured Signature Dishes (sample)
+- Lamb Kebab Platter (189 SEK): grilled lamb, saffron rice, yogurt sauce, pomegranate.
+- Mixed Grill (229 SEK): chicken and lamb skewers with grilled tomato and flatbread.
+- Saffron Rice with Chicken (179 SEK): basmati rice with chicken, dried fruits and nuts.
+- Falafel Plate (149 SEK): crispy falafel, hummus, tahini, pickled vegetables.
+- Grilled Sea Bass (249 SEK): whole grilled sea bass with lemon, herbs, roasted vegetables.
+- Dessert Platter (129 SEK): baklava, kunafa, pistachio ice cream with rose petals.
+
+Menu Categories
+- Starters
+- Kebab Dishes
+- Rice Dishes
+- Specials
+- Kids Menu
+- Drinks
+- Desserts
+
+Sample Menu Items
+Starters:
+- Hummus (79 SEK)
+- Baba Ganoush (79 SEK)
+- Fattoush Salad (89 SEK)
+- Sambousek (89 SEK)
+- Lamb Kibbeh (99 SEK)
+
+Kebab Dishes:
+- Adana Kebab (179 SEK)
+- Chicken Kebab (169 SEK)
+- Mixed Kebab (199 SEK)
+- Lamb Chops (229 SEK)
+- Koobideh (189 SEK)
+
+Rice Dishes:
+- Zereshk Polo (179 SEK)
+- Baghali Polo (189 SEK)
+- Vegetable Biryani (149 SEK)
+- Lamb Biryani (199 SEK)
+
+Specials:
+- Grilled Sea Bass (249 SEK)
+- Ghormeh Sabzi (199 SEK)
+- Chef's Choice (269 SEK)
+- Whole Lamb Shank (289 SEK)
+
+Kids Menu:
+- Mini Kebab (89 SEK)
+- Meatballs (79 SEK)
+- Falafel Kids (79 SEK)
+
+Drinks:
+- Mango Lassi (59 SEK)
+- Mint Lemonade (55 SEK)
+- Ayran (45 SEK)
+- Turkish Tea (35 SEK)
+- Persian Coffee (45 SEK)
+
+Desserts:
+- Baklava (69 SEK)
+- Kunafa (79 SEK)
+- Saffron Panna Cotta (79 SEK)
+- Ice Cream Plate (65 SEK)
+
+Reviews Highlights
+- Guests praise food quality, atmosphere, and service.
+- Lunch buffet is frequently recommended.
+- Catering feedback is very positive for events.
+
+Assistant Behavior Rules
+- Answer questions only with facts from this knowledge file.
+- If exact details are missing, answer: I don't know based on the website knowledge.
+- Keep answers concise, accurate, and customer-friendly.

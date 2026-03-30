@@ -12,6 +12,7 @@ import Booking from "@/components/Booking";
 import Footer from "@/components/Footer";
 import BackToTop from "@/components/BackToTop";
 import FloatingBookingButton from "@/components/FloatingBookingButton";
+import FloatingChatbot from "@/components/FloatingChatbot";
 
 const Index = () => (
   <>
@@ -31,6 +32,7 @@ const Index = () => (
     <Footer />
     <BackToTop />
     <FloatingBookingButton />
+    <FloatingChatbot />
   </>
 );
 
