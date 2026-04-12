@@ -28,8 +28,8 @@ export default function Booking() {
   const getMinDate = () => {
     const today = new Date();
     const year = today.getFullYear();
-    const month = String(today.getMonth() + 1).padStart(2, '0');
-    const day = String(today.getDate()).padStart(2, '0');
+    const month = String(today.getMonth() + 1).padStart(2, "0");
+    const day = String(today.getDate()).padStart(2, "0");
     return `${year}-${month}-${day}`;
   };
 
@@ -144,6 +144,13 @@ export default function Booking() {
                 </div>
               )}
 
+              {/* Discount note */}
+              <div className="rounded-lg border border-amber-200 bg-amber-50 px-4 py-3">
+                <p className="text-sm font-medium text-amber-800">
+                  Advance Booking Offer: Book your table in advance and receive a 10% discount.
+                </p>
+              </div>
+
               <div className="grid sm:grid-cols-2 gap-4">
                 <input
                   required
@@ -226,8 +233,8 @@ export default function Booking() {
                 disabled={loading}
               />
 
-              <button 
-                type="submit" 
+              <button
+                type="submit"
                 className="gold-button w-full text-base py-4 disabled:opacity-50 disabled:cursor-not-allowed"
                 disabled={loading}
               >
@@ -268,15 +275,15 @@ export default function Booking() {
                 <p className="text-xs text-muted-foreground mt-2">Valid for 10 minutes</p>
               </div>
 
-              <button 
-                type="submit" 
+              <button
+                type="submit"
                 className="gold-button w-full text-base py-4 disabled:opacity-50 disabled:cursor-not-allowed"
                 disabled={otpLoading}
               >
                 {otpLoading ? "Verifying..." : "Confirm Booking"}
               </button>
 
-              <button 
+              <button
                 type="button"
                 onClick={() => {
                   setOtpStep(false);
