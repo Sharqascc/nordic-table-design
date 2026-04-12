@@ -3,14 +3,14 @@ export type Bi = Record<Lang, string>;
 
 /* ───── GENERAL ───── */
 export const info = {
-  name: "Saffran",
+  name: "Qabeli Restaurang",
   tagline: {
     sv: "Smaken av Mellanöstern i hjärtat av Stockholm",
     en: "The Taste of the Middle East in the Heart of Stockholm",
   } as Bi,
-  address: "Kungsgatan 15, 111 43 Stockholm",
-  phone: "+46 8 123 45 67",
-  email: "info@saffranrestaurang.se",
+  address: "Turebergsvägen 11, 191 47 Sollentuna, Sweden",
+  phone: "+46 8 122 94 00",
+  email: "info@qabelirestaurant.se",
   mapEmbed:
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2034.798!2d18.0649!3d59.3345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTnCsDIwJzA0LjIiTiAxOMKwMDMnNTMuNiJF!5e0!3m2!1ssv!2sse!4v1",
   social: {
@@ -421,8 +421,8 @@ export const cateringPackages = [
 export const about = {
   title: { sv: "Vår Historia", en: "Our Story" } as Bi,
   text: {
-    sv: "Saffran föddes ur en familjetradition som sträcker sig över generationer. Vår grundare, kocken Ahmad Rashidi, växte upp omgiven av aromer från sin mormorsmors kök i Mellanöstern. Efter att ha förfinat sitt hantverk i Stockholm bestämde han sig för att dela dessa smaker med Sverige. Varje rätt vi serverar bär på en historia – en blandning av orientalisk tradition och skandinavisk elegans.",
-    en: "Saffran was born from a family tradition spanning generations. Our founder, Chef Ahmad Rashidi, grew up surrounded by the aromas of his grandmother's kitchen in the Middle East. After refining his craft in Stockholm, he decided to share these flavors with Sweden. Every dish we serve carries a story – a blend of oriental tradition and Scandinavian elegance.",
+    sv: "Qabeli Restaurang föddes ur en familjetradition som sträcker sig över generationer. Vår grundare, kocken Ahmad Rashidi, växte upp omgiven av aromer från sin mormorsmors kök i Mellanöstern. Efter att ha förfinat sitt hantverk i Stockholm bestämde han sig för att dela dessa smaker med Sverige. Varje rätt vi serverar bär på en historia – en blandning av orientalisk tradition och skandinavisk elegans.",
+    en: "Qabeli Restaurant was born from a family tradition spanning generations. Our founder, Chef Ahmad Rashidi, grew up surrounded by the aromas of his grandmother's kitchen in the Middle East. After refining his craft in Stockholm, he decided to share these flavors with Sweden. Every dish we serve carries a story – a blend of oriental tradition and Scandinavian elegance.",
   } as Bi,
 };
 
