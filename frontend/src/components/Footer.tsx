@@ -18,14 +18,36 @@ export default function Footer() {
             <a href={`tel:${info.phone}`} className="hover:text-primary transition-colors">{info.phone}</a>
             <a href={`mailto:${info.email}`} className="hover:text-primary transition-colors">{info.email}</a>
           </div>
-          <div className="flex md:justify-end gap-4">
-            <a href={info.social.instagram} target="_blank" rel="noopener noreferrer" aria-label="Saffran Restaurant Instagram" className="text-muted-foreground hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 rounded p-1">
+                    <div className="flex md:justify-end gap-4">
+            <a
+              href={info.social.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Saffran Restaurant Instagram"
+              className="text-muted-foreground hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 rounded p-1"
+            >
               <Instagram className="w-5 h-5" />
             </a>
-            <a href={info.social.facebook} target="_blank" rel="noopener noreferrer" aria-label="Saffran Restaurant Facebook" className="text-muted-foreground hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 rounded p-1">
+            <a
+              href={info.social.facebook}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Saffran Restaurant Facebook"
+              className="text-muted-foreground hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 rounded p-1"
+            >
               <Facebook className="w-5 h-5" />
             </a>
+            <a
+              href={info.social.tiktok}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Saffran Restaurant TikTok"
+              className="text-muted-foreground hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 rounded p-1"
+            >
+              <Music4 className="w-5 h-5" />
+            </a>
           </div>
+        
         </div>
         <div className="border-t border-border/20 pt-6 flex flex-wrap justify-between gap-4 text-xs text-muted-foreground">
           <p>© {year} {info.name}. {t.footer.rights}.</p>
