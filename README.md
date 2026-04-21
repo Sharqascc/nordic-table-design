@@ -195,3 +195,25 @@ Email Templates: Edit HTML in backend/server.ts
 Private project – All rights reserved
 
 Built with ❤️ for Qabeli Restaurang
+
+
+
+## 🖼 Menu Images
+
+The Qabeli Restaurang printed menu is included as images so the website can show the real menu pages.
+
+Location:
+
+- `frontend/public/menu/`
+
+Files:
+
+- `menu-1-starters.jpg` – Förrätter (starters)
+- `menu-2-rice-dishes.jpg` – RISRÄTTER (rice dishes)
+- `menu-3-grill.jpg` – GRILLRÄTTER (grill dishes)
+- `menu-4-special.jpg` – SPECIAL MENY
+- `menu-5-desserts.jpg` – EFTERRÄTTER
+
+In the frontend they are referenced as static assets from the `public` folder, for example:
+
+<img src="/menu/menu-1-starters.jpg" alt="Förrätter – Qabeli Restaurang" />
