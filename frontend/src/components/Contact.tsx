@@ -100,19 +100,7 @@ export default function Contact() {
             </div>
           </ScrollReveal>
 
-          <ScrollReveal delay={200}>
-            <div className="aspect-square md:aspect-auto md:h-full min-h-[300px] rounded-lg overflow-hidden border border-border/30">
-              <iframe
-                src={info.mapEmbed}
-                className="w-full h-full"
-                style={{ border: 0, filter: "invert(0.9) hue-rotate(180deg) brightness(0.8) contrast(1.2)" }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Google Maps"
-              />
-            </div>
-          </ScrollReveal>
+          
         </div>
       </div>
     </section>
