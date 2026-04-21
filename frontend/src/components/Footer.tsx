@@ -1,6 +1,6 @@
 import { useLang } from "@/context/LanguageContext";
 import { info } from "@/data/restaurant";
-import { Instagram, Facebook } from "lucide-react";
+import { Instagram, Facebook, Music4 } from "lucide-react";
 
 export default function Footer() {
   const { t } = useLang();
