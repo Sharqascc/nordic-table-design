@@ -9,7 +9,7 @@ export const info = {
     en: "The Taste of the Middle East in the Heart of Stockholm",
   } as Bi,
   address: "Turebergsvägen 11, 191 47 Sollentuna 24 mins",
-  phone: "+46 8 129 40 00",
+  phone: "+46 8 1229 40 00",
   email: "info@qabelirestaurant.se",
   mapEmbed:
     "https://www.google.com/maps/place/Turebergsv%C3%A4gen+11,+191+47+Sollentuna,+Sweden/@59.4292864,17.9483864,17z/data=!3m1!4b1!4m6!3m5!1s0x465f9ecfb260fb35:0x190a74eeda215ef6!8m2!3d59.4292864!4d17.9509613!16s%2Fg%2F11c1_ny48l?entry=ttu&g_ep=EgoyMDI2MDQxNS4wIKXMDSoASAFQAw%3D%3D",
