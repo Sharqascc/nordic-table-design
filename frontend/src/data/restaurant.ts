@@ -365,10 +365,10 @@ export const menuCategories: MenuCategory[] = [
     id: "desserts",
     name: { sv: "Efterrätter", en: "Desserts" },
     items: [
-      { name: { sv: "Baklava", en: "Baklava" }, description: { sv: "Flakverk med valnötter och honungssirap", en: "Phyllo pastry with walnuts and honey syrup" }, price: 69, tags: ["veg"] },
-      { name: { sv: "Kunafa", en: "Kunafa" }, description: { sv: "Krispig ostdessert med rosenvatten", en: "Crispy cheese dessert with rose water" }, price: 79 },
-      { name: { sv: "Saffranspanna Cotta", en: "Saffron Panna Cotta" }, description: { sv: "Krämig panna cotta med saffran och pistasch", en: "Creamy panna cotta with saffron and pistachio" }, price: 79, tags: ["veg"] },
-      { name: { sv: "Glass Tallrik", en: "Ice Cream Plate" }, description: { sv: "Tre sorters orientalisk glass", en: "Three flavors of oriental ice cream" }, price: 65, tags: ["veg"] },
+      { name: { sv: "FRUKT CUP MIX JUICE", en: "FRUKT CUP MIX JUICE" }, description: { sv: "Flakverk med valnötter och honungssirap", en: "Phyllo pastry with walnuts and honey syrup" }, price: 129, tags: ["veg"] },
+      { name: { sv: "MAJOON", en: "MAJOON" }, description: { sv: "BANANMJOLK, VALNOTTER OCH DADLAR", en: "" }, price: 119 },
+      { name: { sv: "BAGHLAWA", en: "BAGHLAWA" }, description: { sv: "Krämig panna cotta med saffran och pistasch", en: "Creamy panna cotta with saffron and pistachio" }, price: 25, tags: ["veg"] },
+      { name: { sv: "FERRENI MED PISTAGE PUDDING", en: "FERRENI MED PISTAGE PUDDING" }, description: { sv: "Tre sorters orientalisk glass", en: "Three flavors of oriental ice cream" }, price: 29, tags: ["veg"] },
     ],
   },
 ];
