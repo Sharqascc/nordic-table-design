@@ -301,74 +301,236 @@ export interface MenuCategory {
 export const menuCategories: MenuCategory[] = [
   {
     id: "starters",
-    name: { sv: "Förrätter", en: "Starters" },
+    name: { sv: "Förrätter", en: "Starters" } as Bi,
     items: [
-      { name: { sv: "Hummus", en: "Hummus" }, description: { sv: "Krämig kikärtsröra med tahini och olivolja", en: "Creamy chickpea dip with tahini and olive oil" }, price: 79, tags: ["veg"] },
-      { name: { sv: "Baba Ganoush", en: "Baba Ganoush" }, description: { sv: "Rökt auberginekräm med vitlök", en: "Smoked eggplant cream with garlic" }, price: 79, tags: ["veg"] },
-      { name: { sv: "Fattoush Sallad", en: "Fattoush Salad" }, description: { sv: "Fräsch sallad med sumak och pitachips", en: "Fresh salad with sumac and pita chips" }, price: 89, tags: ["veg"] },
-      { name: { sv: "Sambousek", en: "Sambousek" }, description: { sv: "Fyllda degknyten med ost och örter", en: "Filled pastries with cheese and herbs" }, price: 89, tags: ["veg"] },
-      { name: { sv: "Lammkibbeh", en: "Lamb Kibbeh" }, description: { sv: "Friterade köttbullar med bulgur och pinjenötter", en: "Fried meat croquettes with bulgur and pine nuts" }, price: 99 },
-    ],
-  },
-  {
-    id: "kebab",
-    name: { sv: "Kebabrätter", en: "Kebab Dishes" },
-    items: [
-      { name: { sv: "Adana Kebab", en: "Adana Kebab" }, description: { sv: "Kryddad lammfärskebab med ris och sallad", en: "Spiced lamb mince kebab with rice and salad" }, price: 179, tags: ["spicy"] },
-      { name: { sv: "Kycklingkebab", en: "Chicken Kebab" }, description: { sv: "Marinerad kycklingkebab med vitlökssås", en: "Marinated chicken kebab with garlic sauce" }, price: 169 },
-      { name: { sv: "Blandad Kebab", en: "Mixed Kebab" }, description: { sv: "Lamm, kyckling och köttfärs med tillbehör", en: "Lamb, chicken and mince with sides" }, price: 199 },
-      { name: { sv: "Lammkotletter", en: "Lamb Chops" }, description: { sv: "Grillad lamm med rosmarin och vitlök", en: "Grilled lamb with rosemary and garlic" }, price: 229 },
-      { name: { sv: "Koobideh", en: "Koobideh" }, description: { sv: "Persisk köttfärskebab med saffronsris", en: "Persian mince kebab with saffron rice" }, price: 189 },
+      {
+        name: { sv: "MANTU", en: "Mantu" },
+        description: {
+          sv: "4 st ångade dumplings",
+          en: "4 steamed dumplings",
+        } as Bi,
+        price: 65,
+      },
+      {
+        name: { sv: "ASHAK", en: "Ashak" },
+        description: {
+          sv: "4 st dumplings med purjolök",
+          en: "4 dumplings with leek",
+        } as Bi,
+        price: 60,
+      },
+      {
+        name: {
+          sv: "SOPPA KYCKLING MED GRÖNSAKER",
+          en: "Chicken soup with vegetables",
+        },
+        description: {
+          sv: "Klar soppa med kyckling och grönsaker",
+          en: "Clear soup with chicken and vegetables",
+        } as Bi,
+        price: 25,
+      },
+      {
+        name: { sv: "SAMBOSA", en: "Sambosa" },
+        description: {
+          sv: "4 st vegetarisk, serveras med vit sås och chatni",
+          en: "4 pcs vegetarian, served with white sauce and chutney",
+        } as Bi,
+        price: 65,
+        tags: ["veg"],
+      },
+      {
+        name: { sv: "BOLANI", en: "Bolani" },
+        description: {
+          sv: "1 st, kokad purjolök och potatis, serveras med chatni",
+          en: "1 pc, cooked leek and potato, served with chutney",
+        } as Bi,
+        price: 65,
+        tags: ["veg"],
+      },
     ],
   },
   {
     id: "rice",
-    name: { sv: "Risrätter", en: "Rice Dishes" },
+    name: { sv: "Risrätter", en: "Rice Dishes" } as Bi,
     items: [
-      { name: { sv: "Zereshk Polo", en: "Zereshk Polo" }, description: { sv: "Saffronsris med berberis och kyckling", en: "Saffron rice with barberries and chicken" }, price: 179 },
-      { name: { sv: "Baghali Polo", en: "Baghali Polo" }, description: { sv: "Dillris med bondbönor och lamm", en: "Dill rice with fava beans and lamb" }, price: 189 },
-      { name: { sv: "Vegetarisk Biryani", en: "Vegetable Biryani" }, description: { sv: "Kryddigt ris med säsongens grönsaker", en: "Spiced rice with seasonal vegetables" }, price: 149, tags: ["veg"] },
-      { name: { sv: "Lammbiryani", en: "Lamb Biryani" }, description: { sv: "Lång kokad lamm med aromatiskt ris", en: "Slow-cooked lamb with aromatic rice" }, price: 199 },
+      {
+        name: { sv: "QABELI UZBEKI", en: "Qabeli Uzbeki" },
+        description: {
+          sv: "Afghanskt kryddat ris med morötter och russin, serveras med kött",
+          en: "Afghan spiced rice with carrots and raisins, served with meat",
+        } as Bi,
+        price: 219,
+      },
+      {
+        name: { sv: "QABELI", en: "Qabeli" },
+        description: {
+          sv: "Afghanskt kryddat ris med morötter och russin, serveras med lammlägg",
+          en: "Afghan spiced rice with carrots and raisins, served with lamb shank",
+        } as Bi,
+        price: 189,
+      },
+      {
+        name: { sv: "SPICE BERYANI", en: "Spice Beryani" },
+        description: {
+          sv: "Kryddig risrätt med smakrika rätter",
+          en: "Spicy rice dish with rich flavors",
+        } as Bi,
+        price: 179,
+      },
+      {
+        name: { sv: "ZERESHK PALAW", en: "Zereshk Palaw" },
+        description: {
+          sv: "Ris med kyckling tillagad i färska tomater och lök",
+          en: "Rice with chicken cooked in fresh tomatoes and onions",
+        } as Bi,
+        price: 179,
+      },
+      {
+        name: { sv: "CHALAW KEBAB", en: "Chalaw Kebab" },
+        description: {
+          sv: "Ris med köttfärsspett och afghansk krydda",
+          en: "Rice with minced meat skewer and Afghan spices",
+        } as Bi,
+        price: 169,
+      },
+      {
+        name: { sv: "KARAYI MORGH", en: "Karayi Morgh" },
+        description: {
+          sv: "Afghansk kycklinggryta i järnpanna med tomat, vitlök och aromatiska kryddor, serveras med bröd",
+          en: "Afghan chicken stew in iron pan with tomato, garlic and aromatic spices, served with bread",
+        } as Bi,
+        price: 179,
+      },
+      {
+        name: { sv: "KARAYI GOSHT", en: "Karayi Gosht" },
+        description: {
+          sv: "Afghansk köttgryta i järnpanna med tomat, vitlök och aromatiska kryddor, serveras med bröd",
+          en: "Afghan meat stew in iron pan with tomato, garlic and aromatic spices, served with bread",
+        } as Bi,
+        price: 279,
+      },
+    ],
+  },
+  {
+    id: "grill",
+    name: { sv: "Grillrätter", en: "Grilled Dishes" } as Bi,
+    items: [
+      {
+        name: { sv: "TIKKA KEBAB", en: "Tikka Kebab" },
+        description: {
+          sv: "Lamspett med afghanska kryddor, serveras med bröd, grönsaker och såser",
+          en: "Lamb skewer with Afghan spices, served with bread, vegetables and sauces",
+        } as Bi,
+        price: 199,
+      },
+      {
+        name: { sv: "MIX KEBAB", en: "Mix Kebab" },
+        description: {
+          sv: "Variation av alla grillrätter, serveras med bröd, grönsaker, såser",
+          en: "Variation of all grilled dishes, served with bread, vegetables, sauces",
+        } as Bi,
+        price: 269,
+      },
+      {
+        name: { sv: "CHAPLI KEBAB", en: "Chapli Kebab" },
+        description: {
+          sv: "Traditionell afghansk köttfärs med kryddad smak, serveras med bröd, sallad, chatni",
+          en: "Traditional Afghan minced meat patty, served with bread, salad, chutney",
+        } as Bi,
+        price: 199,
+      },
+      {
+        name: { sv: "SHAMI KEBAB", en: "Shami Kebab" },
+        description: {
+          sv: "Traditionell afghansk grillad köttfärs, serveras med bröd, sallad, chatni",
+          en: "Traditional Afghan grilled minced meat, served with bread, salad, chutney",
+        } as Bi,
+        price: 199,
+      },
+      {
+        name: { sv: "MORGH KEBAB", en: "Morgh Kebab" },
+        description: {
+          sv: "Marinerat kycklingspett med afghanska kryddor, serveras med ris eller bröd",
+          en: "Marinated chicken skewer with Afghan spices, served with rice or bread",
+        } as Bi,
+        price: 179,
+      },
     ],
   },
   {
     id: "specials",
-    name: { sv: "Specialrätter", en: "Specials" },
+    name: { sv: "Special meny", en: "Special Menu" } as Bi,
     items: [
-      { name: { sv: "Grillad Havsabborre", en: "Grilled Sea Bass" }, description: { sv: "Hel fisk med citron och örter", en: "Whole fish with lemon and herbs" }, price: 249 },
-      { name: { sv: "Ghormeh Sabzi", en: "Ghormeh Sabzi" }, description: { sv: "Persisk örtgryta med lamm", en: "Persian herb stew with lamb" }, price: 199 },
-      { name: { sv: "Kockens Val", en: "Chef's Choice" }, description: { sv: "Fråga din servitör om dagens specialrätt", en: "Ask your server for today's special" }, price: 269 },
-      { name: { sv: "Hela Lammläggen", en: "Whole Lamb Shank" }, description: { sv: "8-timmars brässerad lammlägg", en: "8-hour braised lamb shank" }, price: 289 },
-    ],
-  },
-  {
-    id: "kids",
-    name: { sv: "Barnmeny", en: "Kids Menu" },
-    items: [
-      { name: { sv: "Mini Kebab", en: "Mini Kebab" }, description: { sv: "Kycklingkebab med ris och sallad", en: "Chicken kebab with rice and salad" }, price: 89 },
-      { name: { sv: "Köttbullar", en: "Meatballs" }, description: { sv: "Med ris och yoghurtsås", en: "With rice and yogurt sauce" }, price: 79 },
-      { name: { sv: "Falafel Kids", en: "Falafel Kids" }, description: { sv: "Tre falafler med pommes och dip", en: "Three falafel with fries and dip" }, price: 79, tags: ["veg"] },
-    ],
-  },
-  {
-    id: "drinks",
-    name: { sv: "Drycker", en: "Drinks" },
-    items: [
-      { name: { sv: "Mango Lassi", en: "Mango Lassi" }, description: { sv: "Krämig yoghurtdrink med mango", en: "Creamy yogurt drink with mango" }, price: 59 },
-      { name: { sv: "Mynta Lemonad", en: "Mint Lemonade" }, description: { sv: "Fräsch lemonad med färsk mynta", en: "Fresh lemonade with fresh mint" }, price: 55 },
-      { name: { sv: "Ayran", en: "Ayran" }, description: { sv: "Traditionell yoghurtdrick", en: "Traditional yogurt drink" }, price: 45 },
-      { name: { sv: "Turkiskt Te", en: "Turkish Tea" }, description: { sv: "Starkt svart te serverat i glas", en: "Strong black tea served in glass" }, price: 35 },
-      { name: { sv: "Persiskt Kaffe", en: "Persian Coffee" }, description: { sv: "Kryddigt kaffe med kardemumma", en: "Spiced coffee with cardamom" }, price: 45 },
+      {
+        name: { sv: "QABELI PREMIUM", en: "Qabeli Premium" },
+        description: {
+          sv: "2 st av varje kebabspett (kyckling, köttfärs, lammstek) med tre olika risrätter (Qabeli, Chalaw ris, Beryani). Serveras med 3 olika grytor, sallad och yoghurt.",
+          en: "2 of each kebab skewer (chicken, minced meat, lamb steak) with three rice dishes (Qabeli, Chalaw rice, Beryani). Served with 3 stews, salad and yogurt.",
+        } as Bi,
+        price: 1159,
+      },
+      {
+        name: { sv: "QABELI SPECIAL", en: "Qabeli Special" },
+        description: {
+          sv: "1 st av varje kebabspett (kyckling, köttfärs, lammstek) med tre olika risrätter (Qabeli, Chalaw ris, Beryani). Serveras med 3 olika grytor, sallad och yoghurt.",
+          en: "1 of each kebab skewer (chicken, minced meat, lamb steak) with three rice dishes (Qabeli, Chalaw rice, Beryani). Served with 3 stews, salad and yogurt.",
+        } as Bi,
+        price: 759,
+      },
     ],
   },
   {
     id: "desserts",
-    name: { sv: "Efterrätter", en: "Desserts" },
+    name: { sv: "Efterrätter", en: "Desserts" } as Bi,
     items: [
-      { name: { sv: "FRUKT CUP MIX JUICE", en: "FRUKT CUP MIX JUICE" }, description: { sv: "Flakverk med valnötter och honungssirap", en: "Phyllo pastry with walnuts and honey syrup" }, price: 129, tags: ["veg"] },
-      { name: { sv: "MAJOON", en: "MAJOON" }, description: { sv: "BANANMJOLK, VALNOTTER OCH DADLAR", en: "" }, price: 119 },
-      { name: { sv: "BAGHLAWA", en: "BAGHLAWA" }, description: { sv: "Krämig panna cotta med saffran och pistasch", en: "Creamy panna cotta with saffron and pistachio" }, price: 25, tags: ["veg"] },
-      { name: { sv: "FERRENI MED PISTAGE PUDDING", en: "FERRENI MED PISTAGE PUDDING" }, description: { sv: "Tre sorters orientalisk glass", en: "Three flavors of oriental ice cream" }, price: 29, tags: ["veg"] },
+      {
+        name: { sv: "FRUKT CUP MIX JUICE", en: "Fruit Cup Mix Juice" },
+        description: {
+          sv: "Fruktmix med juice",
+          en: "Mixed fruit cup with juice",
+        } as Bi,
+        price: 129,
+        tags: ["veg"],
+      },
+      {
+        name: { sv: "MAJOON", en: "Majoon" },
+        description: {
+          sv: "Bananmjölk, valnötter och dadlar",
+          en: "Banana milk, walnuts and dates",
+        } as Bi,
+        price: 119,
+      },
+      {
+        name: { sv: "BAGHLAWA", en: "Baghlawa" },
+        description: {
+          sv: "Söt bakelse med nötter",
+          en: "Sweet pastry with nuts",
+        } as Bi,
+        price: 25,
+        tags: ["veg"],
+      },
+      {
+        name: {
+          sv: "FERRENI MED PISTAGE PUDDING",
+          en: "Ferreni with pistachio pudding",
+        },
+        description: {
+          sv: "Krämig pudding med pistage",
+          en: "Creamy pudding with pistachio",
+        } as Bi,
+        price: 29,
+        tags: ["veg"],
+      },
+      {
+          name: { sv: "SHIRYAKH", en: "Shiryakh" },
+          description: {
+            sv: "Afghansk glass med kardemumma, serveras med qaimaq och pistage pudding",
+            en: "Afghan ice cream with cardamom, served with qaimaq and pistachio pudding",
+          } as Bi,
+          price: 59,
+          tags: ["veg"],
+      },
     ],
   },
 ];
