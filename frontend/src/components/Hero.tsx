@@ -32,7 +32,7 @@ export default function Hero() {
           <img
             src="/38x38 cm Golden.svg"
             alt="Qabeli Restaurang logo"
-            className="h-48 w-auto md:h-60 object-contain"
+            className="h-24 w-auto md:h-28 object-contain"
           />
         </div>
 
