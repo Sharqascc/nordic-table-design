@@ -27,9 +27,18 @@ export default function Hero() {
         <p className="text-primary font-sans text-sm md:text-base uppercase tracking-[0.25em] mb-4 animate-fade-up" style={{ animationDelay: "200ms" }}>
           Stockholm
         </p>
-        <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.95] mb-6 animate-fade-up" style={{ animationDelay: "400ms" }}>
+        <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.95] mb-4 animate-fade-up" style={{ animationDelay: "400ms" }}>
           {info.name}
         </h1>
+
+        <div className="flex justify-center mb-6 animate-fade-up" style={{ animationDelay: "500ms" }}>
+          <img
+            src="/Capture.JPG"
+            alt="Qabeli Restaurang logo"
+            className="h-16 w-auto md:h-20 object-contain"
+          />
+        </div>
+
         <p className="text-foreground/80 text-lg md:text-xl max-w-lg mb-8 animate-fade-up" style={{ animationDelay: "600ms" }}>
           {bi(info.tagline)}
         </p>
