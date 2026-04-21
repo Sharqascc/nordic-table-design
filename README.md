@@ -1,35 +1,38 @@
-# Saffran - Restaurant Website
+text
+# Qabeli Restaurang - Restaurant Website
 
-Welcome to **Saffran**, a modern, elegant restaurant website featuring an online booking system and comprehensive dining experience showcase.
+Welcome to **Qabeli Restaurang**, a modern, elegant restaurant website featuring an online booking system and comprehensive dining experience showcase.
+
+---
 
 ## 🌟 Features
 
-✨ **Modern Design**
-- Responsive, mobile-first interface
-- Smooth animations and scroll effects
-- Professional Nordic-inspired aesthetic
+### ✨ Modern Design
+- Responsive, mobile-first interface  
+- Smooth animations and scroll effects  
+- Professional Nordic-inspired aesthetic  
 
-🍽️ **Restaurant Features**
-- Hero section with restaurant showcase
-- Featured dishes highlighting
-- Full menu sections
-- Gallery with beautiful food photography
-- Catering service information
-- Lunch buffet details
-- Customer reviews and testimonials
-- Contact information
+### 🍽️ Restaurant Features
+- Hero section with restaurant showcase  
+- Featured dishes highlighting  
+- Full menu sections  
+- Gallery with beautiful food photography  
+- Catering service information  
+- Lunch buffet details  
+- Customer reviews and testimonials  
+- Contact information  
 
-📱 **Online Booking System**
-- Easy-to-use reservation form
-- Real-time email confirmations
-- Admin notifications to restaurant email
-- Form validation and error handling
-- Responsive booking interface
+### 📱 Online Booking System
+- Easy-to-use reservation form  
+- Real-time email confirmations  
+- Admin notifications to restaurant email  
+- Form validation and error handling  
+- Responsive booking interface  
 
-🚀 **Performance**
-- Fast loading with Vite
-- Optimized bundle size
-- Smooth user experience
+### 🚀 Performance
+- Fast loading with Vite  
+- Optimized bundle size  
+- Smooth user experience  
 
 ---
 
@@ -38,174 +41,157 @@ Welcome to **Saffran**, a modern, elegant restaurant website featuring an online
 ### Quick Start (Recommended)
 
 **Windows:**
-```cmd
-start.bat
-```
 
-**PowerShell:**
-```powershell
-.\start.ps1
-```
-
-### Manual Startup
-
-**Terminal 1 - Backend:**
 ```bash
+start.bat
+PowerShell:
+
+bash
+.\start.ps1
+Manual Startup
+Terminal 1 - Backend:
+
+bash
 cd backend
 npm run dev
-```
+Terminal 2 - Frontend:
 
-**Terminal 2 - Frontend:**
-```bash
+bash
 cd frontend
 npm run dev
-```
+Access the Website
+Frontend: http://localhost:8081
 
-### Access the Website
+Backend API: http://localhost:5000
 
-- **Frontend:** http://localhost:8081
-- **Backend API:** http://localhost:5000
-
----
-
-## 🌐 Deployment
-
+🌐 Deployment
 Ready to put your restaurant online?
 
-📖 **[QUICK_DEPLOY.md](QUICK_DEPLOY.md)** - Deploy in 5 minutes  
-📖 **[DEPLOYMENT.md](DEPLOYMENT.md)** - Complete deployment guide
+📖 QUICK_DEPLOY.md – Deploy in 5 minutes
 
-**Services Used:**
-- **Frontend:** Vercel (FREE)
-- **Backend:** Railway (FREE $5/month credit)
-- **Cost:** $0 for most restaurants
-- **Auto-deploy:** Every `git push` updates your site
+📖 DEPLOYMENT.md – Complete deployment guide
 
----
+Services Used:
 
-## 📋 System Requirements
+Frontend: Vercel (FREE)
 
-- Node.js v18 or higher
-- npm or yarn package manager
+Backend: Railway (FREE $5/month credit)
 
----
+Cost: $0 for most restaurants
 
-## 🔧 Configuration
+Auto-deploy: Every git push updates your site
 
-### Email Setup (Important!)
+📋 System Requirements
+Node.js v18 or higher
 
+npm or yarn package manager
+
+🔧 Configuration
+Email Setup (Important!)
 The restaurant receives booking notifications via email. To enable:
 
-1. Open `.env` file in the root directory
-2. Set your Gmail credentials:
-   ```
-   GMAIL_USER=your-email@gmail.com
-   GMAIL_APP_PASSWORD=your-app-password
-   ```
+Create or edit the .env file in the root directory
 
-3. Get your Gmail App Password:
-   - Enable 2-Step Verification on your Google Account
-   - Go to [Google App Passwords](https://myaccount.google.com/apppasswords)
-   - Generate and copy the 16-character password
-   - Paste it in `.env`
+Set your Gmail credentials:
 
----
+bash
+GMAIL_USER=your-email@gmail.com
+GMAIL_APP_PASSWORD=your-app-password
+Get your Gmail App Password:
 
-## 📁 Project Structure
+Enable 2-Step Verification on your Google Account
 
-```
+Go to https://myaccount.google.com/apppasswords
+
+Generate and copy the 16-character password
+
+Paste it in .env
+
+📁 Project Structure
+text
 nordic-table-design/
-├── frontend/              # React website
+├── frontend/            # React website
 │   ├── src/
-│   │   ├── components/   # React components
-│   │   ├── pages/        # Page components
-│   │   └── App.tsx       # Main app
+│   │   ├── components/  # React components
+│   │   ├── pages/       # Page components
+│   │   └── App.tsx      # Main app
 │   └── package.json
-├── backend/              # Express API server
-│   ├── server.ts         # Booking API endpoint
+├── backend/             # Express API server
+│   ├── server.ts        # Booking API endpoint
 │   └── package.json
-├── .env                  # Configuration (email settings)
-├── start.bat             # Windows startup script
-└── start.ps1             # PowerShell startup script
-```
+├── .env                 # Configuration (email settings)
+├── start.bat            # Windows startup script
+└── start.ps1            # PowerShell startup script
+🎯 Website Sections
+Section	Purpose
+Hero	Eye-catching restaurant introduction
+Featured Dishes	Spotlight on popular menu items
+Menu	Complete dining options
+Gallery	Food & ambiance photography
+Reviews	Customer testimonials
+Booking	Table reservation system
+Catering	Information about catering services
+Contact	Location, hours, phone
+💻 Tech Stack
+Frontend
+React 18.3
 
----
+TypeScript
 
-## 🎯 Website Sections
+Tailwind CSS
 
-| Section | Purpose |
-|---------|---------|
-| **Hero** | Eye-catching restaurant introduction |
-| **Featured Dishes** | Spotlight on popular menu items |
-| **Menu** | Complete dining options |
-| **Gallery** | Food & ambiance photography |
-| **Reviews** | Customer testimonials |
-| **Booking** | Table reservation system |
-| **Catering** | Information about catering services |
-| **Contact** | Location, hours, phone |
+Vite (build tool)
 
----
+shadcn/ui (component library)
 
-## 💻 Tech Stack
+Backend
+Express.js
 
-**Frontend**
-- React 18.3
-- TypeScript
-- Tailwind CSS
-- Vite (build tool)
-- shadcn/ui (component library)
+TypeScript
 
-**Backend**
-- Express.js
-- TypeScript
-- Nodemailer (email service)
-- CORS enabled
+Nodemailer (email service)
 
----
+CORS enabled
 
-## 📧 Booking System
-
+📧 Booking System
 When customers book a table:
-1. Customer receives a professional confirmation email
-2. Restaurant receives a detailed booking notification
-3. All information is pre-filled in HTML email templates
-4. Success message shown to user
 
----
+Customer receives a professional confirmation email
 
-## 🔒 Security
+Restaurant receives a detailed booking notification
 
-- Email credentials stored securely in `.env` (never committed to Git)
-- CORS configured for frontend-backend communication
-- Form validation on both client and server
+All information is pre-filled in HTML email templates
 
----
+Success message shown to user
 
-## 📞 Support
+🔒 Security
+Email credentials stored securely in .env (never committed to Git)
 
+CORS configured for frontend-backend communication
+
+Form validation on both client and server
+
+📞 Support
 For issues or questions:
-- Check backend logs `npm run dev` in backend folder
-- Open browser console with F12
-- Verify email configuration in `.env`
 
----
+Check backend logs with npm run dev in the backend folder
 
-## 🎨 Customization
+Open browser console with F12
 
+Verify email configuration in .env
+
+🎨 Customization
 To customize the restaurant details:
 
-1. **Restaurant Info:** Edit `frontend/src/data/restaurant.ts`
-2. **Menu Items:** Update components in `frontend/src/components/`
-3. **Styling:** Modify `tailwind.config.ts`
-4. **Email Templates:** Edit HTML in `backend/server.ts`
+Restaurant Info: Edit frontend/src/data/restaurant.ts
 
----
+Menu Items: Update components in frontend/src/components/
 
-## 📜 License
+Styling: Modify tailwind.config.ts
 
-Private project - All rights reserved
+Email Templates: Edit HTML in backend/server.ts
 
----
+📜 License
+Private project – All rights reserved
 
-**Built with ❤️ for Nordic Table Design Restaurant**
-
+Built with ❤️ for Qabeli Restaurang
