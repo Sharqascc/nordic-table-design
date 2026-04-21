@@ -12,7 +12,7 @@ export const info = {
   phone: "+46 8 129 40 00",
   email: "info@qabelirestaurant.se",
   mapEmbed:
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2034.798!2d18.0649!3d59.3345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTnCsDIwJzA0LjIiTiAxOMKwMDMnNTMuNiJF!5e0!3m2!1ssv!2sse!4v1",
+    "https://www.google.com/maps/place/Turebergsv%C3%A4gen+11,+191+47+Sollentuna,+Sweden/@59.4292864,17.9483864,17z/data=!3m1!4b1!4m6!3m5!1s0x465f9ecfb260fb35:0x190a74eeda215ef6!8m2!3d59.4292864!4d17.9509613!16s%2Fg%2F11c1_ny48l?entry=ttu&g_ep=EgoyMDI2MDQxNS4wIKXMDSoASAFQAw%3D%3D",
   social: {
     instagram: "www.instagram.com/qabeli_resturang?igsh=am92d3Vxdmt1aGNu",
 
