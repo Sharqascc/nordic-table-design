@@ -15,37 +15,16 @@ export default function Footer() {
             <p className="text-muted-foreground text-sm">{info.address}</p>
           </div>
           <div className="flex flex-col gap-2 text-sm text-muted-foreground">
-            <a href={`tel:${info.phone}`} className="hover:text-primary transition-colors">{info.phone}</a>
-            <a href={`mailto:${info.email}`} className="hover:text-primary transition-colors">{info.email}</a>
-          </div>
-                    <div className="flex md:justify-end gap-4">
             <a
-              href={info.social.instagram}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Saffran Restaurant Instagram"
-              className="text-muted-foreground hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 rounded p-1"
-            >
-              <Instagram className="w-5 h-5" />
-            </a>
-            <a
-              href={info.social.facebook}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Saffran Restaurant Facebook"
-              className="text-muted-foreground hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 rounded p-1"
-            >
-              <Facebook className="w-5 h-5" />
-            </a>
-            <a
-              href={info.social.tiktok}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Saffran Restaurant TikTok"
-              className="text-muted-foreground hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 rounded p-1"
-            >
-              <Music4 className="w-5 h-5" />
-            </a>
+  href={info.social.tiktok}
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Saffran Restaurant TikTok"
+  className="flex flex-col items-center gap-1 text-muted-foreground hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 rounded p-1"
+>
+  <Music4 className="w-5 h-5" />
+  <span className="text-[10px] uppercase tracking-[0.2em]">TikTok</span>
+</a>
           </div>
         
         </div>
