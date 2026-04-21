@@ -536,7 +536,7 @@ export const menuCategories: MenuCategory[] = [
 
 /* ───── LUNCH BUFFET ───── */
 export const lunchBuffet = {
-  price: 139,
+  price: 159,
   hours: { sv: "Måndag–Fredag 11:00–14:00", en: "Monday–Friday 11:00–14:00" } as Bi,
   includes: {
     sv: ["Varmrätt", "Salladsbar", "Bröd & dip", "Dryck (vatten/kaffe/te)", "Dessert"],
