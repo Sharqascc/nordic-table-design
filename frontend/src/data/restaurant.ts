@@ -8,7 +8,7 @@ export const info = {
     sv: "Smaken av Mellanöstern i hjärtat av Stockholm",
     en: "The Taste of the Middle East in the Heart of Stockholm",
   } as Bi,
-  address: "Turebergsvägen 11, 191 47 Sollentuna 24 mins",
+  address: "Turebergs torg 11 191 47 Sollentuna C",
   phone: "+46 8 1229 40 00",
   email: "info@qabelirestaurant.se",
   mapEmbed:
