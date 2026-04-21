@@ -1,6 +1,5 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import FeaturedDishes from "@/components/FeaturedDishes";
 import MenuSection from "@/components/MenuSection";
 import LunchBuffet from "@/components/LunchBuffet";
 import Catering from "@/components/Catering";
@@ -19,7 +18,6 @@ const Index = () => (
     <Navbar />
     <main id="main-content">
       <Hero />
-      <FeaturedDishes />
       <MenuSection />
       <LunchBuffet />
       <Catering />
