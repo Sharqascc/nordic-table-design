@@ -4,7 +4,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 import chefImg from "@/assets/about-chef.jpg";
 
 export default function About() {
-  const { t, bi } = useLang();
+  const { bi } = useLang();
 
   return (
     <section id="about" className="section-padding max-w-6xl mx-auto">
@@ -13,7 +13,7 @@ export default function About() {
           <div className="aspect-[4/5] rounded-lg overflow-hidden">
             <img
               src={chefImg}
-              alt="Ahmad Rashidi, Qabeli chef"
+              alt="Qabeli Restaurang dining and kitchen"
               className="w-full h-full object-cover"
               loading="lazy"
             />
@@ -21,12 +21,13 @@ export default function About() {
         </ScrollReveal>
         <ScrollReveal delay={200}>
           <p className="text-primary text-sm uppercase tracking-[0.2em] mb-3">
-            {t.about.chefTitle}
+            {/* Hard-code label instead of CHEF name */}
+            Our Story
           </p>
-          <h2 className="section-title mb-2">Ahmad Rashidi</h2>
-          <h3 className="font-serif text-xl text-muted-foreground mb-6">
+          {/* Remove the chef name heading entirely */}
+          <h2 className="section-title mb-4">
             {bi(about.title)}
-          </h3>
+          </h2>
           <p className="text-foreground/80 leading-relaxed text-base">
             {bi(about.text)}
           </p>
