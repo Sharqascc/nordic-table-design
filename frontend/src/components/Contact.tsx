@@ -48,7 +48,7 @@ export default function Contact() {
                 <div>
                   <p className="font-medium mb-1">{t.contact.address}</p>
                   <a
-                    href="https://www.google.com/maps/dir/?api=1&destination=59.4289,17.9507"
+                    href="https://www.google.com/maps/dir/?api=1&destination=Turebergs%20torg%2011%2C%20191%2047%20Sollentuna%20C"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-muted-foreground text-sm hover:text-primary transition-colors"
@@ -114,7 +114,7 @@ export default function Contact() {
               </div>
 
               <a
-                href="https://www.google.com/maps/dir/?api=1&destination=59.4289,17.9507"
+                href="https://www.google.com/maps/dir/?api=1&destination=Turebergs%20torg%2011%2C%20191%2047%20Sollentuna%20C"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 outline-button text-sm"
