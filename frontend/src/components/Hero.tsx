@@ -5,6 +5,7 @@ import HeroSlider from "./HeroSlider";
 
 export default function Hero() {
   const { t, bi, lang } = useLang();
+  const showTitle = false; // set to true when you want to show it again
 
   return (
     <section
