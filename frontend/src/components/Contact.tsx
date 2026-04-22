@@ -35,7 +35,9 @@ export default function Contact() {
       <div className="max-w-6xl mx-auto">
         <ScrollReveal>
           <h2 className="section-title text-center mb-3">{t.contact.title}</h2>
-          <p className="section-subtitle text-center mx-auto mb-14">{t.contact.subtitle}</p>
+          <p className="section-subtitle text-center mx-auto mb-14">
+            {t.contact.subtitle}
+          </p>
         </ScrollReveal>
 
         <div className="grid md:grid-cols-2 gap-10">
@@ -45,8 +47,8 @@ export default function Contact() {
                 <MapPin className="w-5 h-5 text-primary mt-0.5 shrink-0" />
                 <div>
                   <p className="font-medium mb-1">{t.contact.address}</p>
-                  <a 
-                    href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(info.address)}`}
+                  <a
+                    href="https://www.google.com/maps/dir/?api=1&destination=59.4289,17.9507"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-muted-foreground text-sm hover:text-primary transition-colors"
@@ -55,18 +57,30 @@ export default function Contact() {
                   </a>
                 </div>
               </div>
+
               <div className="flex items-start gap-4">
                 <Phone className="w-5 h-5 text-primary mt-0.5 shrink-0" />
                 <div>
                   <p className="font-medium mb-1">{t.contact.phone}</p>
-                  <a href={`tel:${info.phone}`} className="text-muted-foreground text-sm hover:text-primary transition-colors">{info.phone}</a>
+                  <a
+                    href={`tel:${info.phone}`}
+                    className="text-muted-foreground text-sm hover:text-primary transition-colors"
+                  >
+                    {info.phone}
+                  </a>
                 </div>
               </div>
+
               <div className="flex items-start gap-4">
                 <Mail className="w-5 h-5 text-primary mt-0.5 shrink-0" />
                 <div>
                   <p className="font-medium mb-1">{t.contact.email}</p>
-                  <a href={`mailto:${info.email}`} className="text-muted-foreground text-sm hover:text-primary transition-colors">{info.email}</a>
+                  <a
+                    href={`mailto:${info.email}`}
+                    className="text-muted-foreground text-sm hover:text-primary transition-colors"
+                  >
+                    {info.email}
+                  </a>
                 </div>
               </div>
 
@@ -74,15 +88,25 @@ export default function Contact() {
               <div className="pt-4">
                 <div className="flex items-center gap-3 mb-4">
                   <Clock className="w-5 h-5 text-primary" />
-                  <h3 className="font-serif text-xl font-semibold">{t.contact.hours}</h3>
-                  <span className={`text-xs font-bold px-3 py-1 rounded-full ${isOpen ? "bg-green-100 text-green-700" : "bg-red-100 text-red-700"}`}>
+                  <h3 className="font-serif text-xl font-semibold">
+                    {t.contact.hours}
+                  </h3>
+                  <span
+                    className={`text-xs font-bold px-3 py-1 rounded-full ${
+                      isOpen
+                        ? "bg-green-100 text-green-700"
+                        : "bg-red-100 text-red-700"
+                    }`}
+                  >
                     {isOpen ? "🟢 Öppet" : "🔴 Stängt"}
                   </span>
                 </div>
                 <div className="space-y-2 bg-secondary/30 rounded-lg p-4">
                   {info.hours.map((h, i) => (
                     <div key={i} className="flex justify-between text-sm">
-                      <span className="text-muted-foreground font-medium">{bi(h.day)}</span>
+                      <span className="text-muted-foreground font-medium">
+                        {bi(h.day)}
+                      </span>
                       <span className="font-semibold">{h.time}</span>
                     </div>
                   ))}
@@ -90,7 +114,7 @@ export default function Contact() {
               </div>
 
               <a
-                href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(info.address)}`}
+                href="https://www.google.com/maps/dir/?api=1&destination=59.4289,17.9507"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 outline-button text-sm"
@@ -99,8 +123,6 @@ export default function Contact() {
               </a>
             </div>
           </ScrollReveal>
-
-          
         </div>
       </div>
     </section>
