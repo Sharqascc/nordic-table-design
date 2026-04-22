@@ -5,7 +5,8 @@ import HeroSlider from "./HeroSlider";
 
 export default function Hero() {
   const { t, bi, lang } = useLang();
-  const showTitle = false; // set to true when you want to show it again
+  const showTitle = false;      // set to true when you want to show the main title again
+  const showLocation = false;   // set to true when you want to show "Stockholm" again
 
   return (
     <section
@@ -23,12 +24,14 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative z-10 w-full max-w-7xl mx-auto px-5 md:px-8 pb-16 md:pb-24">
-        <p
-          className="text-primary font-sans text-sm md:text-base uppercase tracking-[0.25em] mb-4 animate-fade-up"
-          style={{ animationDelay: "200ms" }}
-        >
-          Stockholm
-        </p>
+        {showLocation && (
+          <p
+            className="text-primary font-sans text-sm md:text-base uppercase tracking-[0.25em] mb-4 animate-fade-up"
+            style={{ animationDelay: "200ms" }}
+          >
+            Stockholm
+          </p>
+        )}
 
         <div
           className="flex justify-start mb-6 animate-fade-up"
