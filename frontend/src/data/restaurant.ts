@@ -553,7 +553,7 @@ export const cateringPackages = [
   {
     name: { sv: "Lilla Paketet", en: "Small Package" } as Bi,
     guests: "10–25",
-    priceFrom: 199,
+    priceFrom: null,
     features: {
       sv: ["3 förrätter", "2 varmrätter", "Sallad & bröd", "1 dessert"],
       en: ["3 starters", "2 main courses", "Salad & bread", "1 dessert"],
@@ -562,7 +562,7 @@ export const cateringPackages = [
   {
     name: { sv: "Mellanpaketet", en: "Medium Package" } as Bi,
     guests: "25–50",
-    priceFrom: 179,
+    priceFrom: null,
     features: {
       sv: ["4 förrätter", "3 varmrätter", "Sallad & bröd", "2 desserter", "Dryck ingår"],
       en: ["4 starters", "3 main courses", "Salad & bread", "2 desserts", "Drinks included"],
@@ -571,7 +571,7 @@ export const cateringPackages = [
   {
     name: { sv: "Stora Paketet", en: "Large Package" } as Bi,
     guests: "50+",
-    priceFrom: 159,
+    priceFrom: null,
     features: {
       sv: ["5 förrätter", "4 varmrätter", "Salladsbar", "3 desserter", "Dryck ingår", "Servering"],
       en: ["5 starters", "4 main courses", "Salad bar", "3 desserts", "Drinks included", "Service staff"],
