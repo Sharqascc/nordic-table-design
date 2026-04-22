@@ -11,14 +11,25 @@ export default function About() {
       <div className="grid md:grid-cols-2 gap-12 items-center">
         <ScrollReveal>
           <div className="aspect-[4/5] rounded-lg overflow-hidden">
-            <img src={chefImg} alt="Ahmad Rashidi, Saffran chef and founder" className="w-full h-full object-cover" loading="lazy" />
+            <img
+              src={chefImg}
+              alt="Ahmad Rashidi, Qabeli chef"
+              className="w-full h-full object-cover"
+              loading="lazy"
+            />
           </div>
         </ScrollReveal>
         <ScrollReveal delay={200}>
-          <p className="text-primary text-sm uppercase tracking-[0.2em] mb-3">{t.about.chefTitle}</p>
+          <p className="text-primary text-sm uppercase tracking-[0.2em] mb-3">
+            {t.about.chefTitle}
+          </p>
           <h2 className="section-title mb-2">Ahmad Rashidi</h2>
-          <h3 className="font-serif text-xl text-muted-foreground mb-6">{bi(about.title)}</h3>
-          <p className="text-foreground/80 leading-relaxed text-base">{bi(about.text)}</p>
+          <h3 className="font-serif text-xl text-muted-foreground mb-6">
+            {bi(about.title)}
+          </h3>
+          <p className="text-foreground/80 leading-relaxed text-base">
+            {bi(about.text)}
+          </p>
         </ScrollReveal>
       </div>
     </section>
