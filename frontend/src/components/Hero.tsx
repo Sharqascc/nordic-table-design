@@ -41,12 +41,14 @@ export default function Hero() {
           />
         </div>
 
-        <h1
-          className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.95] mb-4 animate-fade-up"
-          style={{ animationDelay: "400ms" }}
-        >
-          {info.name}
-        </h1>
+        {showTitle && (
+          <h1
+            className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.95] mb-4 animate-fade-up"
+            style={{ animationDelay: "400ms" }}
+          >
+            {info.name}
+          </h1>
+        )}
 
         <p
           className="text-foreground/80 text-lg md:text-xl max-w-lg mb-8 animate-fade-up"
