@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom global styles */
+body {
+  @apply bg-background text-foreground;
+}
+
+/* Hero logo float animation */
+.logo-float {
+  animation: logo-float 2.5s ease-in-out alternate infinite;
+  will-change: transform;
+}
+
+@keyframes logo-float {
+  from { transform: translateY(0); }
+  to   { transform: translateY(-8px); }
+}

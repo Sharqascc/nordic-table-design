@@ -29,7 +29,7 @@ export default function Hero() {
         </p>
 
         <div className="flex justify-center mb-6 animate-fade-up" style={{ animationDelay: "300ms" }}>
-          <img
+                    <img
             src="/38x38 cm Golden.svg"
             alt="Qabeli Restaurang logo"
             className="h-28 w-auto md:h-32 object-contain logo-float"
