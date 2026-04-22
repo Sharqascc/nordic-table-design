@@ -583,8 +583,8 @@ export const cateringPackages = [
 export const about = {
   title: { sv: "Vår Historia", en: "Our Story" } as Bi,
   text: {
-    sv: "Qabeli Restaurang föddes ur en familjetradition som sträcker sig över generationer. Vår grundare, kocken Ahmad Rashidi, växte upp omgiven av aromer från sin mormorsmors kök i Mellanöstern. Efter att ha förfinat sitt hantverk i Stockholm bestämde han sig för att dela dessa smaker med Sverige. Varje rätt vi serverar bär på en historia – en blandning av orientalisk tradition och skandinavisk elegans.",
-    en: "Qabeli Restaurant was born from a family tradition spanning generations. Our founder, Chef Ahmad Rashidi, grew up surrounded by the aromas of his grandmother's kitchen in the Middle East. After refining his craft in Stockholm, he decided to share these flavors with Sweden. Every dish we serve carries a story – a blend of oriental tradition and Scandinavian elegance.",
+    sv: "Qabeli Restaurang är en familjedriven restaurang i Sollentuna som vill dela äkta afghanska och mellanösternsmaker med Stockholm. Här möter långkok, kryddor och klassisk qabili pilau en enkel skandinavisk elegans. Vår meny bygger på generösa portioner, hemlagade rätter och en varm, välkomnande atmosfär – precis som vid ett afghanskt familjebord.",
+    en: "Qabeli Restaurang is a family-run restaurant in Sollentuna dedicated to sharing authentic Afghan and Middle Eastern flavors with Stockholm. Here, slow-cooked dishes, spices, and classic qabili pilau meet a touch of Scandinavian elegance. Our menu is built on generous portions, homemade dishes, and a warm, welcoming atmosphere – just like at an Afghan family table.",
   } as Bi,
 };
 
