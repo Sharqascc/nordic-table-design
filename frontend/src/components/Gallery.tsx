@@ -3,27 +3,24 @@ import { useLang } from "@/context/LanguageContext";
 import ScrollReveal from "@/components/ScrollReveal";
 import { X } from "lucide-react";
 
+import dish1 from "@/assets/dish-1.jpg";
+import dish2 from "@/assets/dish-2.jpg";
+import dish3 from "@/assets/dish-3.jpg";
+import dish4 from "@/assets/dish-4.jpg";
+import dish5 from "@/assets/dish-5.jpg";
+import dish6 from "@/assets/dish-6.jpg";
+import heroImg from "@/assets/hero-restaurant.jpg";
+import chefImg from "@/assets/about-chef.jpg";
+
 const galleryImages = [
-  {
-    src: "/Gallery-1.jpg",
-    alt: "Qabeli Restaurang dining area with Afghan-inspired décor",
-    span: "md:col-span-2 md:row-span-2",
-  },
-  {
-    src: "/Gallery-2.jpg",
-    alt: "Qabeli signature qabili pilau with lamb and carrots",
-    span: "",
-  },
-  {
-    src: "/Gallery-3.jpg",
-    alt: "Mixed grill platter from Qabeli Restaurang",
-    span: "",
-  },
-  {
-    src: "/Gallery-4.jpg",
-    alt: "Dessert selection at Qabeli Restaurang",
-    span: "",
-  },
+  { src: heroImg, alt: "Saffran Restaurant dining area with warm lighting and traditional décor", span: "md:col-span-2 md:row-span-2" },
+  { src: dish1, alt: "Lamb kebab platter with saffron rice and yogurt sauce", span: "" },
+  { src: dish2, alt: "Mixed grill with chicken and lamb skewers", span: "" },
+  { src: dish3, alt: "Golden saffron rice with chicken and dried fruits", span: "" },
+  { src: dish4, alt: "Crispy falafel plate with hummus and tahini", span: "" },
+  { src: dish5, alt: "Whole grilled sea bass with lemon herbs and roasted vegetables", span: "md:col-span-2" },
+  { src: dish6, alt: "Dessert platter with baklava, kunafa and pistachio ice cream", span: "" },
+  { src: chefImg, alt: "Ahmad Rashidi, founder and chef of Saffran Restaurant", span: "" },
 ];
 
 export default function Gallery() {
@@ -35,9 +32,7 @@ export default function Gallery() {
       <div className="max-w-7xl mx-auto">
         <ScrollReveal>
           <h2 className="section-title text-center mb-3">{t.gallery.title}</h2>
-          <p className="section-subtitle text-center mx-auto mb-14">
-            {t.gallery.subtitle}
-          </p>
+          <p className="section-subtitle text-center mx-auto mb-14">{t.gallery.subtitle}</p>
         </ScrollReveal>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
@@ -58,15 +53,13 @@ export default function Gallery() {
           ))}
         </div>
 
+        {/* Lightbox */}
         {lightbox !== null && (
           <div
             className="fixed inset-0 z-[100] bg-background/95 backdrop-blur-md flex items-center justify-center p-4"
             onClick={() => setLightbox(null)}
           >
-            <button
-              className="absolute top-6 right-6 text-foreground"
-              aria-label="Close"
-            >
+            <button className="absolute top-6 right-6 text-foreground" aria-label="Close">
               <X className="w-8 h-8" />
             </button>
             <img
@@ -79,4 +72,4 @@ export default function Gallery() {
       </div>
     </section>
   );
-}
+}    
