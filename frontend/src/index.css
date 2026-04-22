@@ -138,3 +138,46 @@
     white-space: normal;
   }
 }
+
+
+.robot-dance {
+  animation: robot-bounce 1.4s ease-in-out infinite;
+  transform-origin: 50% 100%;
+}
+
+.robot-dance:hover {
+  animation: robot-dance-crazy 0.6s ease-in-out infinite;
+}
+
+@keyframes robot-bounce {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-6px) rotate(-3deg);
+  }
+  50% {
+    transform: translateY(-2px) rotate(3deg);
+  }
+  75% {
+    transform: translateY(-4px) rotate(-2deg);
+  }
+}
+
+@keyframes robot-dance-crazy {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-8px) rotate(-8deg);
+  }
+  50% {
+    transform: translateY(2px) rotate(8deg);
+  }
+  75% {
+    transform: translateY(-10px) rotate(-6deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+}

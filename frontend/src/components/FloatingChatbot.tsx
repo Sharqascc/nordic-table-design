@@ -80,14 +80,27 @@ export default function FloatingChatbot() {
 
   return (
     <>
-      <Button
-        onClick={() => setOpen((prev) => !prev)}
-        className="fixed bottom-24 right-6 z-50 rounded-full shadow-lg md:bottom-6"
-        size="icon"
-        aria-label={open ? "Close Qabeli Assistant" : "Open Qabeli Assistant"}
-      >
-        {open ? <X className="w-5 h-5" /> : <MessageCircle className="w-5 h-5" />}
-      </Button>
+      <div className="fixed bottom-24 right-6 z-50 flex items-end gap-2 md:bottom-6">
+        <div
+          className="robot-dance w-12 h-12 cursor-pointer hidden md:block"
+          onClick={() => setOpen((prev) => !prev)}
+          aria-label={open ? "Close Qabeli Assistant" : "Open Qabeli Assistant"}
+        >
+          <img
+            src="/robot.svg"
+            alt="Qabeli Assistant robot"
+            className="w-full h-full"
+          />
+        </div>
+        <Button
+          onClick={() => setOpen((prev) => !prev)}
+          className="rounded-full shadow-lg"
+          size="icon"
+          aria-label={open ? "Close Qabeli Assistant" : "Open Qabeli Assistant"}
+        >
+          {open ? <X className="w-5 h-5" /> : <MessageCircle className="w-5 h-5" />}
+        </Button>
+      </div>
 
       {open && (
         <div className="fixed bottom-40 right-6 z-50 w-[min(92vw,360px)] rounded-lg border border-border bg-card shadow-lg md:bottom-20">
