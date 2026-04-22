@@ -30,7 +30,7 @@ export default function Hero() {
         </p>
 
         <div
-          className="flex justify-center mb-6 animate-fade-up"
+          className="flex justify-start mb-6 animate-fade-up"
           style={{ animationDelay: "300ms" }}
         >
           <img
