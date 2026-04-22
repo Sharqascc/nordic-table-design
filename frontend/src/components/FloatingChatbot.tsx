@@ -82,14 +82,14 @@ export default function FloatingChatbot() {
     <>
       <div className="fixed bottom-24 right-6 z-50 flex items-end gap-2 md:bottom-6">
         <div
-          className="robot-dance w-12 h-12 cursor-pointer hidden md:block flex items-center justify-center rounded-full bg-card border border-border/60"
+          className="robot-dance w-12 h-12 cursor-pointer hidden md:block"
           onClick={() => setOpen((prev) => !prev)}
           aria-label={open ? "Close Qabeli Assistant" : "Open Qabeli Assistant"}
         >
           <img
             src="/robot.svg"
             alt="Qabeli Assistant robot"
-            className="w-9 h-9 object-contain"
+            className="w-full h-full"
           />
         </div>
         <Button
@@ -158,4 +158,4 @@ export default function FloatingChatbot() {
       )}
     </>
   );
-}
+} 
