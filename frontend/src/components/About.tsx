@@ -20,11 +20,11 @@ export default function About() {
           </div>
         </ScrollReveal>
         <ScrollReveal delay={200}>
+          {/* Small gold label – change text here */}
           <p className="text-primary text-sm uppercase tracking-[0.2em] mb-3">
-            {/* Hard-code label instead of CHEF name */}
-            Our Story
+            About Qabeli
           </p>
-          {/* Remove the chef name heading entirely */}
+          {/* Main heading from about.title */}
           <h2 className="section-title mb-4">
             {bi(about.title)}
           </h2>
