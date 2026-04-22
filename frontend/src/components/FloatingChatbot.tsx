@@ -1,42 +1,43 @@
-import { useEffect, useMemo, useRef, useState, type FormEvent } from 'react';
-import { MessageCircle, Send, X, Loader2 } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { askChatbot } from '@/services/chatbotService';
+import { useEffect, useMemo, useRef, useState, type FormEvent } from "react";
+import { MessageCircle, Send, X, Loader2 } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { askChatbot } from "@/services/chatbotService";
 
 type ChatMessage = {
   id: string;
-  role: 'user' | 'assistant';
+  role: "user" | "assistant";
   text: string;
 };
 
 const WELCOME_MESSAGE: ChatMessage = {
-  id: 'welcome',
-  role: 'assistant',
-  text: 'Hi! Ask me anything about Saffran: menu, hours, catering, or booking.',
+  id: "welcome",
+  role: "assistant",
+  text: "Hi! I’m Qabeli Assistant. Ask me anything about our menu, opening hours, lunch buffet, catering, or table booking.",
 };
 
 export default function FloatingChatbot() {
   const [open, setOpen] = useState(false);
   const [loading, setLoading] = useState(false);
-  const [input, setInput] = useState('');
+  const [input, setInput] = useState("");
   const [messages, setMessages] = useState<ChatMessage[]>([WELCOME_MESSAGE]);
   const bottomRef = useRef<HTMLDivElement | null>(null);
 
   const disabled = useMemo(() => loading || !input.trim(), [loading, input]);
 
   useEffect(() => {
-    bottomRef.current?.scrollIntoView({ behavior: 'smooth' });
+    bottomRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages, open]);
 
   const handleSend = async () => {
     const message = input.trim();
     if (!message || loading) return;
 
-    setInput('');
+    setInput("");
+
     const userMessage: ChatMessage = {
       id: `${Date.now()}-user`,
-      role: 'user',
+      role: "user",
       text: message,
     };
 
@@ -49,8 +50,10 @@ export default function FloatingChatbot() {
         ...prev,
         {
           id: `${Date.now()}-assistant`,
-          role: 'assistant',
-          text: reply.answer || "I don't know based on the website knowledge.",
+          role: "assistant",
+          text:
+            reply.answer ||
+            "I’m not sure about that based on the website information, but you can always call us or send an email.",
         },
       ]);
     } catch (error) {
@@ -58,8 +61,11 @@ export default function FloatingChatbot() {
         ...prev,
         {
           id: `${Date.now()}-assistant-error`,
-          role: 'assistant',
-          text: error instanceof Error ? error.message : 'Chatbot is currently unavailable.',
+          role: "assistant",
+          text:
+            error instanceof Error
+              ? error.message
+              : "Qabeli Assistant is currently unavailable. Please try again later.",
         },
       ]);
     } finally {
@@ -78,7 +84,7 @@ export default function FloatingChatbot() {
         onClick={() => setOpen((prev) => !prev)}
         className="fixed bottom-24 right-6 z-50 rounded-full shadow-lg md:bottom-6"
         size="icon"
-        aria-label={open ? 'Close chatbot' : 'Open chatbot'}
+        aria-label={open ? "Close Qabeli Assistant" : "Open Qabeli Assistant"}
       >
         {open ? <X className="w-5 h-5" /> : <MessageCircle className="w-5 h-5" />}
       </Button>
@@ -86,8 +92,10 @@ export default function FloatingChatbot() {
       {open && (
         <div className="fixed bottom-40 right-6 z-50 w-[min(92vw,360px)] rounded-lg border border-border bg-card shadow-lg md:bottom-20">
           <div className="border-b border-border px-4 py-3">
-            <p className="font-medium">Saffran Assistant</p>
-            <p className="text-xs text-muted-foreground">Answers from website knowledge</p>
+            <p className="font-medium">Qabeli Assistant</p>
+            <p className="text-xs text-muted-foreground">
+              Answers based on Qabeli Restaurang’s website
+            </p>
           </div>
 
           <div className="max-h-80 overflow-y-auto px-3 py-3 space-y-2">
@@ -95,31 +103,41 @@ export default function FloatingChatbot() {
               <div
                 key={message.id}
                 className={`rounded-md px-3 py-2 text-sm leading-relaxed ${
-                  message.role === 'user'
-                    ? 'ml-8 bg-primary text-primary-foreground'
-                    : 'mr-8 bg-secondary text-secondary-foreground'
+                  message.role === "user"
+                    ? "ml-8 bg-primary text-primary-foreground"
+                    : "mr-8 bg-secondary text-secondary-foreground"
                 }`}
               >
                 {message.text}
               </div>
             ))}
+
             {loading && (
               <div className="mr-8 inline-flex items-center gap-2 rounded-md bg-secondary px-3 py-2 text-sm text-secondary-foreground">
                 <Loader2 className="w-4 h-4 animate-spin" />
                 Thinking...
               </div>
             )}
+
             <div ref={bottomRef} />
           </div>
 
-          <form onSubmit={handleSubmit} className="border-t border-border p-3 flex items-center gap-2">
+          <form
+            onSubmit={handleSubmit}
+            className="border-t border-border p-3 flex items-center gap-2"
+          >
             <Input
               value={input}
               onChange={(event) => setInput(event.target.value)}
-              placeholder="Ask about menu, hours, booking..."
+              placeholder="Ask about menu, lunch buffet, hours, booking..."
               disabled={loading}
             />
-            <Button type="submit" size="icon" disabled={disabled} aria-label="Send message">
+            <Button
+              type="submit"
+              size="icon"
+              disabled={disabled}
+              aria-label="Send message"
+            >
               <Send className="w-4 h-4" />
             </Button>
           </form>
